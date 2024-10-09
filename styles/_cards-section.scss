@@ -1,0 +1,54 @@
+@import 'settings';
+
+.cards-section {
+    margin-top: 100px;
+    padding: 40px;
+    background-color: $accent;
+    max-width: 1360px;
+    h2 {
+        text-align: center;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 135%;
+        color: $additional;
+        text-transform: capitalize;
+    }
+
+    .cards {
+        margin-top: 60px;
+        display: flex;
+
+        .card {
+            text-align: center;
+            margin: 12px;
+
+            &-img {
+                max-width: 410px;
+                height: 410px;
+            }
+
+            &-title {
+                color: $additional;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 135%;
+                text-transform: capitalize;
+            }
+
+            &-price {
+                color: $additional;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 162%;
+                letter-spacing: 0.1em;
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

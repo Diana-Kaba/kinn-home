@@ -1,0 +1,31 @@
+@import 'settings';
+
+.essentials-section {
+    max-width: 1360px;
+
+    .essentials {
+        background-image: url(../images/essentials.jpg);
+        max-width: 1328px;
+        height: 700px;
+        border: 20px solid $accent;
+        margin-top: 100px;
+        padding: 40px;
+        text-align: center;
+
+        &-title {
+            font-size: 50px;
+            font-weight: 400;
+            color: $additional;
+            line-height: 121%;
+        }
+
+        &-subtitle {
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 127%;
+            letter-spacing: 0.11em;
+            color: $additional;
+            text-transform: uppercase;
+        }
+    }
+}

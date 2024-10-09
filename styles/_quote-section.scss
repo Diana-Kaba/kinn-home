@@ -1,0 +1,47 @@
+@import 'settings';
+
+.quote {
+    margin-top: 100px;
+
+    &-title {
+        text-align: center;
+        color: $additional;
+        font-weight: 400;
+        font-size: 57px;
+    }
+
+    &-links {
+        display: flex;
+        justify-content: center;
+
+        a {
+            color: $additional;
+            text-decoration: none;
+            text-transform: capitalize;
+            font-size: 18px;
+            line-height: 160%;
+            letter-spacing: 0.1em;
+            padding-left: 24px;
+            transition: .5s;
+
+            &::after {
+                content: "";
+                display: block;
+                height: 2px;
+                background-color: $additional-light;
+            }
+
+            &:nth-child(1)::after {
+                width: 105px;
+            }
+
+            &:nth-child(2)::after {
+                width: 148px;
+            }
+
+            &:hover {
+                opacity: .5;
+            }
+        }
+    }
+}

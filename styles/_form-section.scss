@@ -1,0 +1,66 @@
+@import 'settings';
+
+.form-section {
+    max-width: 1328px;
+    height: 279px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $accent;
+    color: $additional;
+    h2 {
+        font-size: 28px;
+        line-height: 139%;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 169%;
+        font-weight: 400;
+    }
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+
+    input {
+        margin: 20px;
+    }
+
+    .enter {
+        width: 340px;
+        background-color: $accent;
+        border: none;
+        border-bottom: 1px solid $additional;
+    }
+}
+
+
+@mixin btn($paddings){
+    background: #56593D;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1.60px;
+    line-height: 22.4px;
+    padding: $paddings;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+.btn-shop{
+    @include btn(16px 25px);
+}
+
+.btn-form{
+    @include btn(0px 23px);
+}
