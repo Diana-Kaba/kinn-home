@@ -20,7 +20,7 @@ header::before {
   content: "";
   display: block;
   background-color: #FFFFEF;
-  width: 1424px;
+  max-width: 1424px;
   height: 16px;
   margin: 0 auto;
   margin-top: 10px;
@@ -469,6 +469,35 @@ form .enter {
 
 @media (max-width: 960px) {
   .time-section .time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.gallery-section {
+  max-width: 1400px;
+  background-color: #FFFFEF;
+  margin-top: 100px;
+  padding: 40px;
+  margin-bottom: 100px;
+}
+.gallery-section h2 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  color: #56593D;
+}
+.gallery-section .gallery {
+  display: flex;
+}
+.gallery-section .gallery img {
+  width: 320px;
+  height: 320px;
+  margin: 4px;
+}
+
+@media (max-width: 960px) {
+  .gallery-section .gallery {
     display: flex;
     flex-direction: column;
     align-items: center;
