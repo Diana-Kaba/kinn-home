@@ -16,10 +16,12 @@ body {
   margin: 0 auto;
 }
 
-header .rectangle {
-  max-width: 1424px;
-  height: 16px;
+header::before {
+  content: "";
+  display: block;
   background-color: #FFFFEF;
+  width: 1424px;
+  height: 16px;
   margin: 0 auto;
   margin-top: 10px;
 }
