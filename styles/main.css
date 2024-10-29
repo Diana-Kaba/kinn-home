@@ -37,20 +37,6 @@ header::before {
   height: 50px;
   cursor: pointer;
 }
-.menu h1 {
-  text-transform: uppercase;
-  color: #72765B;
-  font-weight: 400;
-  letter-spacing: 10px;
-  font-size: 26px;
-}
-.menu h1::before {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 2px;
-  background-color: #72765B;
-}
 .menu nav {
   display: flex;
   padding: 20px;
@@ -150,13 +136,13 @@ header::before {
 }
 
 @media (min-width: 960px) {
-  .menu h1 {
+  .menu .logo {
     position: absolute;
     left: 50%;
   }
 }
 @media (max-width: 1220px) {
-  .menu h1 {
+  .menu .logo {
     position: absolute;
     left: 44%;
   }
